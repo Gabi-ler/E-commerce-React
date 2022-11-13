@@ -11,10 +11,14 @@ import CreateAccount from '@pages/CreateAccount'
 import MyAccount from '@pages/MyAccount'
 import NewPassword from '@pages/NewPassword'
 import Orders from '@pages/Orders'
+import AppContext from '../context/AppContext';
+import UseInitialState from '../hooks/useInitialState';
 import '@styles/global.css';
 
 const App = () => {
+    const initialState = UseInitialState()
     return (
+        <AppContext.Provider value={ initialState }>
         <BrowserRouter>
             <Layout>
                 <Routes>
@@ -31,6 +35,7 @@ const App = () => {
                 </Routes>
             </Layout>
         </BrowserRouter>
+        </AppContext.Provider>
     )
 }
 

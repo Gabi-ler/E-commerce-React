@@ -1,5 +1,5 @@
 import React from 'react';
-import OrderItem from '@component/OrderItem';
+import OrderItem from '@components/OrderItem';
 import '@styles/CheckOut.scss'
 
 const CheckOut = () => {

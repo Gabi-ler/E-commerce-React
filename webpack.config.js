@@ -3,7 +3,7 @@ const htmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
-    entry: './scr/index.js',
+    entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
@@ -13,7 +13,7 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx'],
         alias: {
-            '@components': path.resolve(__dirname, 'src/component/'),
+            '@components': path.resolve(__dirname, 'src/components/'),
             '@containers': path.resolve(__dirname, 'src/containers/'),
             '@pages': path.resolve(__dirname, 'src/pages/'),
             '@routes': path.resolve(__dirname, 'src/routes/'),

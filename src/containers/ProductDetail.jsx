@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductInfo from '../component/ProductInfo';
+import ProductInfo from '@components/ProductInfo';
 import '@styles/ProductDetails.scss'
 
 import close from '@icons/icon_close.png'
